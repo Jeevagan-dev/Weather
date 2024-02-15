@@ -21,7 +21,7 @@ async function getWeather(location) {
         humidity.innerHTML = data.main.humidity + '%';
         windspeed.innerHTML = data.wind.speed + ' km/h';
         let imagedetails = data.weather[0].main;
-        weatherIcon.src = 'https://github.com/Jeevagan-dev/Weather/tree/main/images/'+imagedetails.toLowerCase() + '.png';
+        weatherIcon.src = 'https://raw.githubusercontent.com/Jeevagan-dev/Weather/main/images/'+imagedetails.toLowerCase() + '.png';
     } else {
         document.querySelector('.error').style.display = 'block';
         document.querySelector('.wheather-items').style.display = 'none';
