@@ -24,6 +24,7 @@ async function getWeather(location) {
         weatherIcon.src = '/'+ imagedetails.toLowerCase() + '.png';
     } else {
         document.querySelector('.error').style.display = 'block';
+        document.querySelector('.wheather-items').style.display = 'none';
     }
 }
 
