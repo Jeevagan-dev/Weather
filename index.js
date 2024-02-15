@@ -21,7 +21,7 @@ async function getWeather(location) {
         humidity.innerHTML = data.main.humidity + '%';
         windspeed.innerHTML = data.wind.speed + ' km/h';
         let imagedetails = data.weather[0].main;
-        weatherIcon.src = '/'+ imagedetails.toLowerCase() + '.png';
+        weatherIcon.src = imagedetails.toLowerCase() + '.png';
     } else {
         document.querySelector('.error').style.display = 'block';
         document.querySelector('.wheather-items').style.display = 'none';
